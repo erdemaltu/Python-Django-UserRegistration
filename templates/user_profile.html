@@ -1,0 +1,35 @@
+{% extends 'homebase.html' %}
+
+{% block title %} {{profile.username}} Profile {% endblock %}
+
+{% block content %}
+        <br>
+        <div style="padding-bottom:230px;" class="container">
+            <table class="shopping-cart-table table">
+                <tr>
+                    <th class="text-left">Name Surname</th>
+                    <td class="text-left">{{ profile.first_name}} {{ profile.last_name}} </td>
+                </tr>
+                <tr>
+                    <th class="text-left">User Name</th>
+                    <td class="text-left">{{ profile.username}} </td>
+                </tr>
+                <tr>
+                    <th class="text-left">Email</th>
+                    <td class="text-left">{{ profile.email}}</td>
+                </tr>
+                <tr>
+                    <th class="text-left">Phone</th>
+                    <td class="text-left">{{ account.phone}}</td>
+                </tr>
+                <tr>
+                    <th class="text-left">Gender</th>
+                    <td class="text-left">{{ account.gender}}</td>
+                </tr>
+                <tr>
+                    <th class="text-left">Adres</th>
+                    <td class="text-left">{{ account.address}}</td>
+                </tr>
+            </table>
+        </div>
+{% endblock %}
